@@ -1,0 +1,2 @@
+# gas_nuct_assignment_public
+GASでNUCTから課題を取得する
