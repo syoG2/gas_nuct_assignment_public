@@ -1,6 +1,12 @@
 // userPropertiesに必要な情報を設定する関数
 // 該当箇所に情報を入力し、実行したら消去可
 // 入力するのは名大id,パスワード,ワンタイムパスワードのシード値
+
+// tasklistのidは
+// console.log(Tasks.Tasklists.list());
+// を実行することで,titleとidを確認できます.
+// プログラムに問題はないと思いますが,万が一のために,大学の課題専用のタスクリストを作成してそのtasklistのidを利用してください.
+
 const setUserProp = () => {
   const userProperties = PropertiesService.getUserProperties();
   // google tasksのtasklistのidを"google tasksのtasklistのid"に設定
@@ -35,3 +41,5 @@ const base32decode = (seed) => {
 
   return decodeSeed;
 }
+
+
