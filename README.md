@@ -26,3 +26,16 @@
   - gmailtoTasks (Gmailを利用して課題の完了を反映する関数)
   
     をトリガーをつけて実行
+    
+# メソッドの説明
+- gmailtoTasks()
+  <br/>gmailから課題提出メール、小テスト提出メールを取得し、課題を完了したかどうかをgoogle Todoに反映
+  <br/>課題提出メールと小テスト提出メールをgmailに転送する必要あり
+- tasksApi()
+  <br/>課題と小テストをgoogle Todoに追加または更新,ただし既に同じidの課題が存在し,更新日時が前のものは更新しない
+- nuctGetAssignmentsAndQuizes()
+  <br/>NUCT上でお気に入りのサイトから今日以降が提出締め切りの全ての課題と小テストを取得
+- nuctCasGetCookie()
+  <br/>認証済みのcookieを返す
+- getTotpToken()
+  <br/>totpワンタイムパスワードを返す
