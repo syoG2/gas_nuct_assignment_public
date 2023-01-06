@@ -1,6 +1,6 @@
 // userPropertiesに必要な情報を設定する関数
 // 該当箇所に情報を入力し、実行したら消去可
-// 入力するのは名大id,パスワード,ワンタイムパスワードのシード値
+// 入力するのは名大id,パスワード,ワンタイムパスワードのシード値,tasklistのid
 
 // tasklistのidは
 // console.log(Tasks.Tasklists.list());
@@ -19,7 +19,7 @@ const setUserProp = () => {
   // シード値を"シード値"に設定
   const seed = "シード値"
   // decodedSeedとしてワンタイムパスワードのシード値をBase32デコードした値を設定
-  userProperties.setProperty("decodeSeed",base32decode(seed));
+  userProperties.setProperty("decodedSeed",base32decode(seed));
 
 }
 
